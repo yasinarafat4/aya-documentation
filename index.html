@@ -27,25 +27,46 @@
       <div class="drawer-content flex flex-col">
         <!-- Page content here -->
         <!-- Header -->
-        <nav class="bg-slate-200 py-4 flex justify-between items-center">
+        <nav
+          class="bg-slate-100 py-4 xl:py-6 flex justify-between items-center fixed w-full"
+        >
           <!-- Search -->
-          <input
-            type="text"
-            placeholder="Search"
-            class="ms-3 input input-bordered w-2/3 md:w-full max-w-xs"
-          />
+          <div
+            class="text-gray-600 border-none rounded-md w-full flex items-center"
+          >
+            <input
+              type="search"
+              name="search"
+              placeholder="Search..."
+              class="bg-white ms-3 px-4 py-2 xl:py-3 rounded-full text-sm focus:outline-none w-3/4 md:w-3/6 lg:w-2/6 border border-primary"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 -ml-9"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
 
           <!-- Menu Icon -->
           <label
             for="my-drawer-2"
-            class="drawer-button flex justify-end mr-3 lg:hidden"
+            class="drawer-button flex justify-end lg:hidden mr-3"
             ><img
-              class="h-6 w-6 md:h-8 md:w-8"
+              class="h-8 w-9 md:h-9"
               src="https://i.ibb.co/ygBX180/menu-removebg-preview.png"
               alt=""
           /></label>
         </nav>
-        <div class="p-3">
+        <div class="p-4 pt-[80px]">
           <!-- Installation section -->
           <section id="installation">
             <h2 class="font-bold">Installation</h2>
